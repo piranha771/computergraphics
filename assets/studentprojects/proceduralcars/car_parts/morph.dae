@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
+    </contributor>
+    <created>2016-04-01T10:37:28</created>
+    <modified>2016-04-01T10:37:28</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Cube_001-mesh" name="Cube.001">
+      <mesh>
+        <source id="Cube_001-mesh-positions">
+          <float_array id="Cube_001-mesh-positions-array" count="24">-1 -1 -1 -1 -1 1 -1 1 -1 -1 1 1 1 -1 -1 1 -1 1 1 1 -1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_001-mesh-normals">
+          <float_array id="Cube_001-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_001-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_001-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Cube_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_001-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 5 2 4 2 6 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 0 3 0 0 0 3 1 7 1 2 1 7 2 5 2 6 2 5 3 1 3 4 3 0 4 2 4 4 4 5 5 7 5 1 5</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube-mesh_morph_ffftestfff" name="ffftestfff">
+      <mesh>
+        <source id="Cube-mesh_morph_ffftestfff-positions">
+          <float_array id="Cube-mesh_morph_ffftestfff-positions-array" count="24">-1 -1 -1 -1 -1 -0.1443048 -1 1 -1 -1 1 -0.1443048 1 -1 -1 1 -1 -0.1443048 1 1 -1 1 1 -0.1443048</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh_morph_ffftestfff-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh_morph_ffftestfff-normals">
+          <float_array id="Cube-mesh_morph_ffftestfff-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh_morph_ffftestfff-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh_morph_ffftestfff-vertices">
+          <input semantic="POSITION" source="#Cube-mesh_morph_ffftestfff-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Cube-mesh_morph_ffftestfff-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh_morph_ffftestfff-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 5 2 4 2 6 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 0 3 0 0 0 3 1 7 1 2 1 7 2 5 2 6 2 5 3 1 3 4 3 0 4 2 4 4 4 5 5 7 5 1 5</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube-mesh_morph_ffftest2fff" name="ffftest2fff">
+      <mesh>
+        <source id="Cube-mesh_morph_ffftest2fff-positions">
+          <float_array id="Cube-mesh_morph_ffftest2fff-positions-array" count="24">-1 -1 -1 -1 -1 1 -1 2.33411 -1 -1 2.33411 1 1 -1 -1 1 -1 1 1 2.33411 -1 1 2.33411 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh_morph_ffftest2fff-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh_morph_ffftest2fff-normals">
+          <float_array id="Cube-mesh_morph_ffftest2fff-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh_morph_ffftest2fff-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh_morph_ffftest2fff-vertices">
+          <input semantic="POSITION" source="#Cube-mesh_morph_ffftest2fff-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Cube-mesh_morph_ffftest2fff-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh_morph_ffftest2fff-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 0 0 7 1 6 1 2 1 5 2 4 2 6 2 1 3 0 3 4 3 2 4 6 4 4 4 7 5 3 5 1 5 1 0 3 0 0 0 3 1 7 1 2 1 7 2 5 2 6 2 5 3 1 3 4 3 0 4 2 4 4 4 5 5 7 5 1 5</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Cube-morph" name="Cube-morph">
+      <morph source="#Cube_001-mesh" method="NORMALIZED">
+        <source id="Cube-targets">
+          <IDREF_array id="Cube-targets-array" count="2">Cube-mesh_morph_ffftestfff Cube-mesh_morph_ffftest2fff</IDREF_array>
+          <technique_common>
+            <accessor source="#Cube-targets-array" count="2" stride="1">
+              <param name="IDREF" type="IDREF"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-weights">
+          <float_array id="Cube-weights-array" count="2">0.6881029 0.699</float_array>
+          <technique_common>
+            <accessor source="#Cube-weights-array" count="2" stride="1">
+              <param name="MORPH_WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <targets>
+          <input semantic="MORPH_TARGET" source="#Cube-targets"/>
+          <input semantic="MORPH_WEIGHT" source="#Cube-weights"/>
+        </targets>
+      </morph>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Cube" name="Cube" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_001-mesh" name="Cube"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
