@@ -1,0 +1,52 @@
+include "GrammatikBasic";
+attr float sportlich (0, 1);
+attr int sitze (2, 6);
+attr float comic (0, 1);
+attr float nutzen (0, 1);
+
+model motorhaube "path/to/model";
+model reifen "path/to/model";
+model heck "path/to/model";
+
+start startrule;
+
+startrule -> container(width, height, length,
+		align(center, absolute),
+		car);
+
+car -> container(parent.width, parent.height/2, parent.length/3,
+		align(front, floating),
+		carfront),
+		container(parent.width, parent.height, parent.length/3
+		align(front, floating),
+		carmiddle),
+		container(parent.width, parent.height/2, parent.length/3
+		align(front, floating),
+		cartail);
+		
+carfront -> render(motorhaube, align(front, absolute)),
+			render(reifen, align(motorhaube.reifen_links, absolute)),
+			render(reifen, align(motorhaube.reifen_rechts, absolute));
+			
+carmiddle -> container(parent.width, parent.height, parent.length / sitze / 2, 
+			align(front, floating),
+			carwind),
+			container(parent.width, parent.height, parent.length / sitze / 2, 
+			align(front, floating),
+			carmitteltuer);
+			
+cartail -> render(heck, align(front, floating)),
+		   render(reifen, align(heck.reifen_links, absolute)),
+		   render(reifen, align(heck.reifen_rechts, absolute));
+		
+carwind -> render(frontscheibe, align(front, floating)),
+			container(parent.width / 2, parent.height / 3 * 2, parent.length * 0.95,
+			align(front, left, floating),
+			seat),
+			container(parent.width / 2, parent.height / 3 * 2, parent.length * 0.95,
+			align(front, right, floating),
+			seat);
+			
+seat -> render(sitz, align(back, bottom, floating));
+		
+			
